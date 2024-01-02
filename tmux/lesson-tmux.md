@@ -1,0 +1,23 @@
+# Tmux Terminal
+
+- commands for tmux
+- command `tmux ls`
+- command `tmux new -s session-name` or `tmux new-session -s session-name`
+- detach/close tmux session [`C-b d`]
+- command `tmux attach -t main` or `tmux a -t main`. `-t` is for target window.
+- `exit` closes the tmux window
+- rename tmux window [`C-b ,`]
+- create new tmux window [`C-b c`]
+- switch between tmux windows [`C-b 0`, `C-b 1` ... ]
+- switch beteen tmux windows using next `n` and previous `p` windows [`C-b n`, `C-b p`]
+- close tmux session command [`tmux kill-session -t 0` or `tmux kill-session -t main`]
+- command `tmux kill-session` will kill all active running sessions
+- rename session usage `rename-session -t target-session new-name`. 
+- rename session inside tmux, use [`C-b $`] to rename session.
+- command to split vertical window as pane using [`C-b %`]
+- command to split horizonatal window using [`C-b "`]
+- `exit` command closes split window [`C-b "`]
+- navigating between split panes using [`C-b arrow keys`]
+- resize split panes using [`C-b C-arrow keys`]
+- use [`C-b [`) to go to editing mode to scroll up and down using arrow keys. `q` to exit
+- use [`C-b w`] to show all windows and select accordingly. Use `esc` to exit selection.
